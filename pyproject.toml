@@ -1,0 +1,14 @@
+[project]
+name = "neurips-paper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.3",
+    "transformers>=4.44",
+    "accelerate>=0.33",
+    "datasets>=2.20",
+    "numpy>=1.26",
+    "scipy>=1.13",
+]
