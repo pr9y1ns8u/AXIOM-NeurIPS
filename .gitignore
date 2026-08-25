@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+.env
+
+# Generated run output
+figs/*
+!figs/.gitkeep

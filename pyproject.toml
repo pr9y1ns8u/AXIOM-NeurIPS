@@ -3,12 +3,20 @@ name = "neurips-paper"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
-    "torch>=2.3",
     "transformers>=4.44",
-    "accelerate>=0.33",
-    "datasets>=2.20",
     "numpy>=1.26",
     "scipy>=1.13",
+    "matplotlib>=3.8",
+    "torch>=2.13.0",
+    "huggingface-hub[hf-transfer]>=1.28.0",
+    "dotenv>=0.9.9",
 ]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
